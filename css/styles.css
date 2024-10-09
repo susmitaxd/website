@@ -1,0 +1,148 @@
+/*
+Authors: Sunita kumari Khadka
+Date: 10/09/2024
+File Name: styles.css
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: #5371a9;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide the tablet-desk class */
+.tablet-desk {
+    display: none;
+}
+
+/* Style rules for header content */
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 5%;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #003e80;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    padding: 3%;
+}
+
+nav li a {
+    display: block;
+    color: #314263;
+    text-decoration: none;
+}
+
+/* Grid layout for the main section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 2%;
+}
+
+/* Make sure each section is a grid item */
+.grid-item {
+    background-color: rgba(240, 244, 255, 0.9);
+    border: 1px solid #003e80;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+/* Class to span across two columns */
+.grid-span {
+    grid-column: span 2;
+}
+
+/* Existing styles for about-section */
+.about-section {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e7eaf3;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main a {
+    color: #003e80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    margin-left: 12%;
+}
+
+.action {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #003e80;
+}
+
+.round {
+    border-radius: 12px;
+}
+
+#clubs ul li {
+    padding-bottom: 4%;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+    opacity: 0.8;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
